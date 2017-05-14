@@ -48,12 +48,12 @@
             If deleteAPI() Then
                 Exit Sub
             End If
-            If addAPI() Then
-                Exit Sub
-            End If
             'If replaceAPI() Then
             'Exit Sub
             'End If
+            If addAPI() Then
+                Exit Sub
+            End If
             Label1.Text = "Setting combo box with updated audio file list..."
                 wait(1000)
                 If My.Settings.audio_files_details = "" Then
