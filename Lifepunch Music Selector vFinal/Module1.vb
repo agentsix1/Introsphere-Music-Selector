@@ -70,7 +70,7 @@ Module Module1
     Public Function CheckForUpdates()
         frmSplash.Label1.Text = "Checking For Updates..."
         Dim client As Net.WebClient = New Net.WebClient()
-        Dim reader As IO.StreamReader = New IO.StreamReader(client.OpenRead("https://pastebin.com/raw/H5vr4mQP"))
+        Dim reader As IO.StreamReader = New IO.StreamReader(client.OpenRead("https://pastebin.com/dgzKDERx"))
         Dim info As String() = Split(reader.ReadToEnd, vbCrLf)
         Dim filename As String = info(2)
         Dim LatestVer = info(0)
@@ -94,8 +94,8 @@ Module Module1
                                                 del /F ""Introsphere Music Selector.exe.pre " & info(0) & """
                                                 ren """ & Application.ExecutablePath & """ ""Introsphere Music Selector.exe.pre " & info(0) & """
                                                 del /F ""Introsphere Music Selector.exe""" & vbCrLf & "
-                                                ren """ & filename & """ ""Introsphere Music Selector.exe""
-                                                start """" ""Introsphere Music Selector.exe""")
+                                                ren """ & filename & """ """ & Application.ExecutablePath & """
+                                                start """" """ & Application.ExecutablePath & """")
                     frmSplash.Close()
                     frmMain.Close()
                     frmSteam.Close()
