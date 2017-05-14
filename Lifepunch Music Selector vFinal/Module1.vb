@@ -91,7 +91,7 @@ Module Module1
                     MsgBox("We now need you to restart your program. Another program will breifly open and your updated program will launch. Lets do this", vbInformation, "Important Info")
                     System.IO.File.WriteAllText(Application.StartupPath & "\update.bat", "" & "
                                                 @echo off
-                                                del /F ""Introsphere Music Selector.exe.pre " & info(0) & """
+                                                del /F ""Introsphere Music Selector v" & Version & ".exe.bak""" & vbCrLf & "
                                                 ren """ & Application.ExecutablePath & """ ""Introsphere Music Selector v" & Version & ".exe.bak""""
                                                 del /F ""Introsphere Music Selector.exe""" & vbCrLf & "
                                                 ren """ & filename & """ """ & Application.ExecutablePath & """
