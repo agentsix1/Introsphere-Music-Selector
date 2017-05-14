@@ -50,6 +50,7 @@ Partial Class frmMain
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -280,12 +281,23 @@ Partial Class frmMain
         Me.Button7.Text = "View Full Log"
         Me.Button7.UseVisualStyleBackColor = True
         '
+        'Button8
+        '
+        Me.Button8.ForeColor = System.Drawing.Color.Black
+        Me.Button8.Location = New System.Drawing.Point(381, 11)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(101, 23)
+        Me.Button8.TabIndex = 17
+        Me.Button8.Text = "Restore All"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(494, 410)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
@@ -340,4 +352,5 @@ Partial Class frmMain
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents PrivateToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UsernameHereToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Button8 As Button
 End Class
