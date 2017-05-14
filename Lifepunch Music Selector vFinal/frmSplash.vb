@@ -24,11 +24,6 @@
                 System.IO.File.Delete(appPath & "update.bat")
             Catch ex As Exception
             End Try
-            Try
-                System.IO.File.Delete(appPath & "add.api")
-                System.IO.Directory.Delete(appPath & "files")
-            Catch ex As Exception
-            End Try
             My.Computer.Network.DownloadFile("http://introsphere.ga/intmc/default-add.api", appPath & "add.api")
         End If
         If Timer1.Interval = 3000 Then
@@ -52,44 +47,40 @@
             End If
             Label1.Text = "Searching for audio file change requests..."
             wait(1500)
-            'If deleteAPI() Then
-            'Exit Sub
-            'End If
-            If addAPI() And pubrelease = False Then
-                My.Settings.pubrelase = True
-                pubrelease = True
-                My.Settings.Save()
-
+            If deleteAPI() Then
                 Exit Sub
             End If
-            'If replaceAPI() Then
-            'Exit Sub
-            'End If
-            Label1.Text = "Setting combo box with updated audio file list..."
-            wait(1000)
-            If My.Settings.audio_files_details = "" Then
-                MsgBox("Could not find audio files to be change. Please download a patch from the forums to add songs to be changed.", vbCritical, "no audio files found")
-                Me.Close()
-            Else
-                song_detail = Split(My.Settings.audio_files_details, "!=!")
-                song_filename = Split(My.Settings.audio_files_filename, "!=!")
-                song_custom = Split(My.Settings.audio_files_custom, "!=!")
+            If addAPI() Then
+                Exit Sub
             End If
-            Label1.Text = "Setting the list of music in the list box..."
-            wait(1000)
-            music_list = Split(My.Settings.music, "|")
-            Label1.Text = "Launching Program! Please wait..."
-            wait(1500)
-            Me.Hide()
-            frmMain.Show()
-            frmMain.ConsoleToolStripMenuItem.Visible = False
-            frmMain.ToolStripMenuItem1.Visible = False
-            frmMain.PrivateToolStripMenuItem.Visible = False
-            frmMain.UsernameHereToolStripMenuItem.Visible = False
-            frmMain.SettingsToolStripMenuItem.Visible = False
-            Timer1.Enabled = False
-        Else
-            Label1.Text = "Launching Boot Sequence..."
+            If replaceAPI() Then
+                Exit Sub
+            End If
+            Label1.Text = "Setting combo box with updated audio file list..."
+                wait(1000)
+                If My.Settings.audio_files_details = "" Then
+                    MsgBox("Could not find audio files to be change. Please download a patch from the forums to add songs to be changed.", vbCritical, "no audio files found")
+                    Me.Close()
+                Else
+                    song_detail = Split(My.Settings.audio_files_details, "!=!")
+                    song_filename = Split(My.Settings.audio_files_filename, "!=!")
+                    song_custom = Split(My.Settings.audio_files_custom, "!=!")
+                End If
+                Label1.Text = "Setting the list of music in the list box..."
+                wait(1000)
+                music_list = Split(My.Settings.music, "|")
+                Label1.Text = "Launching Program! Please wait..."
+                wait(1500)
+                Me.Hide()
+                frmMain.Show()
+                frmMain.ConsoleToolStripMenuItem.Visible = False
+                frmMain.ToolStripMenuItem1.Visible = False
+                frmMain.PrivateToolStripMenuItem.Visible = False
+                frmMain.UsernameHereToolStripMenuItem.Visible = False
+                frmMain.SettingsToolStripMenuItem.Visible = False
+                Timer1.Enabled = False
+            Else
+                Label1.Text = "Launching Boot Sequence..."
             Timer1.Interval = 3000
         End If
 

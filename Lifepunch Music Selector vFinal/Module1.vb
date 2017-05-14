@@ -13,8 +13,8 @@ Module Module1
     Public appPath As String = Application.StartupPath() & "\"
     Public Function steamAPI()
         If System.IO.File.Exists(appPath & "gmod.api") Then
-            System.IO.File.Delete(appPath & "gmod.api")
             setSteam()
+            System.IO.File.Delete(appPath & "gmod.api")
             Return True
         Else
             Return False
@@ -24,6 +24,7 @@ Module Module1
     Public Function addAPI()
         If System.IO.File.Exists(appPath & "add.api") Then
             addFiles()
+            System.IO.File.Delete(appPath & "add.api")
             Return True
         Else
             Return False
@@ -33,6 +34,7 @@ Module Module1
     Public Function deleteAPI()
         If System.IO.File.Exists(appPath & "delete.api") Then
             delFiles()
+            System.IO.File.Delete(appPath & "delete.api")
             Return True
         Else
             Return False
@@ -42,6 +44,7 @@ Module Module1
     Public Function replaceAPI()
         If System.IO.File.Exists(appPath & "replace.api") Then
             repFiles()
+            System.IO.File.Delete(appPath & "replace.api")
             Return True
         Else
             Return False
