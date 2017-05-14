@@ -92,7 +92,7 @@ Module Module1
                     System.IO.File.WriteAllText(Application.StartupPath & "\update.bat", "" & "
                                                 @echo off
                                                 del /F ""Introsphere Music Selector.exe.pre " & info(0) & """
-                                                ren """ & Application.ExecutablePath & """ ""Introsphere Music Selector.exe.pre " & info(0) & """
+                                                ren """ & Application.ExecutablePath & """ ""Introsphere Music Selector v" & Version & ".exe.bak""""
                                                 del /F ""Introsphere Music Selector.exe""" & vbCrLf & "
                                                 ren """ & filename & """ """ & Application.ExecutablePath & """
                                                 start """" """ & Application.ExecutablePath & """")
