@@ -88,7 +88,7 @@ Module Module1
                     System.IO.File.WriteAllText(Application.StartupPath & "\update.bat", "" & "
                                                 @echo off
                                                 wait 1000
-                                                ren ""Introsphere Music Selector.exe"" ""Introsphere Music Selector.exe.pre " & info(0) & """
+                                                ren """ & Application.ExecutablePath & """ ""Introsphere Music Selector.exe.pre " & info(0) & """
                                                 ren """ & filename & """ ""Introsphere Music Selector.exe""
                                                 start """" ""Introsphere Music Selector.exe""")
                     Process.Start(Application.StartupPath & "\update.bat")
