@@ -1,0 +1,12 @@
+c:\users\jeremy\documents\visual studio 2015\Projects\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\bin\Debug\Lifepunch Music Selector vFinal.exe.config
+C:\Users\Jeremy\documents\visual studio 2015\Projects\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\obj\Debug\Lifepunch Music Selector vFinal.vbprojResolveAssemblyReference.cache
+C:\Users\Jeremy\documents\visual studio 2015\Projects\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\obj\Debug\Lifepunch_Music_Selector_vFinal.frmMain.resources
+C:\Users\Jeremy\documents\visual studio 2015\Projects\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\obj\Debug\Lifepunch_Music_Selector_vFinal.frmSplash.resources
+C:\Users\Jeremy\documents\visual studio 2015\Projects\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\obj\Debug\Lifepunch_Music_Selector_vFinal.Resources.resources
+C:\Users\Jeremy\documents\visual studio 2015\Projects\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\obj\Debug\Lifepunch Music Selector vFinal.vbproj.GenerateResource.Cache
+C:\Users\Jeremy\documents\visual studio 2015\Projects\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\obj\Debug\Lifepunch Music Selector vFinal.xml
+C:\Users\Jeremy\documents\visual studio 2015\Projects\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\bin\Debug\Lifepunch Music Selector vFinal.exe
+C:\Users\Jeremy\documents\visual studio 2015\Projects\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\bin\Debug\Lifepunch Music Selector vFinal.pdb
+C:\Users\Jeremy\documents\visual studio 2015\Projects\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\bin\Debug\Lifepunch Music Selector vFinal.xml
+C:\Users\Jeremy\documents\visual studio 2015\Projects\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\obj\Debug\Lifepunch Music Selector vFinal.exe
+C:\Users\Jeremy\documents\visual studio 2015\Projects\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\obj\Debug\Lifepunch Music Selector vFinal.pdb
