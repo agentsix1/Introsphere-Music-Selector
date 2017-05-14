@@ -1,0 +1,11 @@
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Update Sounds\Introsphere Update Sounds\Introsphere Update Sounds\bin\Debug\Introsphere Update Sounds.exe.config
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Update Sounds\Introsphere Update Sounds\Introsphere Update Sounds\bin\Debug\Introsphere Update Sounds.exe
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Update Sounds\Introsphere Update Sounds\Introsphere Update Sounds\bin\Debug\Introsphere Update Sounds.pdb
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Update Sounds\Introsphere Update Sounds\Introsphere Update Sounds\bin\Debug\Introsphere Update Sounds.xml
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Update Sounds\Introsphere Update Sounds\Introsphere Update Sounds\obj\Debug\Introsphere Update Sounds.vbprojResolveAssemblyReference.cache
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Update Sounds\Introsphere Update Sounds\Introsphere Update Sounds\obj\Debug\Introsphere_Update_Sounds.Form1.resources
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Update Sounds\Introsphere Update Sounds\Introsphere Update Sounds\obj\Debug\Introsphere_Update_Sounds.Resources.resources
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Update Sounds\Introsphere Update Sounds\Introsphere Update Sounds\obj\Debug\Introsphere Update Sounds.vbproj.GenerateResource.Cache
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Update Sounds\Introsphere Update Sounds\Introsphere Update Sounds\obj\Debug\Introsphere Update Sounds.exe
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Update Sounds\Introsphere Update Sounds\Introsphere Update Sounds\obj\Debug\Introsphere Update Sounds.xml
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Update Sounds\Introsphere Update Sounds\Introsphere Update Sounds\obj\Debug\Introsphere Update Sounds.pdb
