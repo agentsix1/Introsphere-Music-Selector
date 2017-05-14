@@ -15,7 +15,6 @@
         'pbLogo.Image = My.Resources.lp_christmas_logo
         'End If
     End Sub
-    Public pubrelease = My.Settings.pubrelase
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Label4.Text = Version
 
