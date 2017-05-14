@@ -93,7 +93,7 @@ Module Module1
                                                 @echo off
                                                 del /F ""Introsphere Music Selector v" & Version & ".exe.bak""" & vbCrLf & "
                                                 ren """ & Application.ExecutablePath & """ ""Introsphere Music Selector v" & Version & ".exe.bak""""
-                                                del /F ""Introsphere Music Selector.exe""" & vbCrLf & "
+                                                del /F """ & Application.ExecutablePath & """" & vbCrLf & "
                                                 ren """ & filename & """ """ & Application.ExecutablePath & """
                                                 start """" """ & Application.ExecutablePath & """")
                     frmSplash.Close()
