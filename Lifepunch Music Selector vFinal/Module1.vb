@@ -3,7 +3,7 @@ Imports System.IO
 Module Module1
     Public title As String = "Introsphere Music Selector " & shorVersion & " - By: [INT] Agentsix1"
     Public ver As Boolean = False
-    Public Version = "v1.0 4-30-17"
+    Public Version = "v1.1 5-14-17"
     Public shorVersion = Split(Version, " ")(0)
     Public song_detail()
     Public song_filename()
@@ -70,7 +70,7 @@ Module Module1
     Public Function CheckForUpdates()
         frmSplash.Label1.Text = "Checking For Updates..."
         Dim client As Net.WebClient = New Net.WebClient()
-        Dim reader As IO.StreamReader = New IO.StreamReader(client.OpenRead("https://pastebin.com/dgzKDERx"))
+        Dim reader As IO.StreamReader = New IO.StreamReader(client.OpenRead("https://pastebin.com/raw/dgzKDERx"))
         Dim info As String() = Split(reader.ReadToEnd, vbCrLf)
         Dim filename As String = info(2)
         Dim LatestVer = info(0)
@@ -78,6 +78,7 @@ Module Module1
             frmSplash.Label1.Text = "You appear to be up to date..."
             wait(1000)
         Else
+            MsgBox(info(0))
             Dim Result As DialogResult = MessageBox.Show("You are needing to update as you are currently out of date. Would you like to be redirect to the latest version?", "Needs Updating", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
             If Result = System.Windows.Forms.DialogResult.Yes Then
                 Try
