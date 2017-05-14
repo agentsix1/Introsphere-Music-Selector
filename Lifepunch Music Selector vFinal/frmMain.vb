@@ -54,12 +54,12 @@
             If ListBox1.Items.Item(ListBox1.SelectedIndex) = "" Then
                 MsgBox("You need to select a audio file that you would like to change.")
             Else
-                For Each pre As String In Split(sound_list_database, vbCrLf)
+                For Each pre As String In Split(My.Settings.audio_files_filename, "!=!")
                     Dim files() = Split(My.Settings.audio_files_custom, "!=!")
                     Dim i As Integer = 0
                     For Each file In files
                         Dim sound() = Split(pre, "|")
-                        If (ComboBox1.Text.Equals(file) And sound(0).Equals(Split(My.Settings.audio_files_filename, "!=!")(i))) Then
+                        If (ComboBox1.Text.Equals(file)) Then
                             System.IO.File.Copy(ListBox1.Items.Item(ListBox1.SelectedIndex), gmod & Split(My.Settings.audio_files_details, "!=!")(i), True)
                             MsgBox("Done!")
                         End If
@@ -93,6 +93,7 @@
                             Else
                                 System.IO.File.Copy(appPath & "files\" & Split(My.Settings.audio_files_filename, "!=!")(i), gmod & Split(My.Settings.audio_files_details, "!=!")(i), True)
                                 MsgBox("Done!")
+                                Return
                             End If
                         Else
                             Dim out = MsgBox("It appears you have not already downloaded the file for this sound. Would you like to download the sound now to continue this process?", vbYesNo, "No file")
@@ -100,6 +101,7 @@
                                 My.Computer.Network.DownloadFile(sound(1), appPath & "files\" & Split(My.Settings.audio_files_filename, "!=!")(i))
                                 System.IO.File.Copy(appPath & "files\" & Split(My.Settings.audio_files_filename, "!=!")(i), gmod & Split(My.Settings.audio_files_details, "!=!")(i), True)
                                 MsgBox("Done!")
+                                Return
                                 Exit For
                             End If
                         End If
@@ -108,6 +110,29 @@
                 Next
 
             Next
+            For Each pre As String In Split(My.Settings.audio_files_filename, "!=!")
+                Dim sound() = Split(pre, "|")
+                Dim files() = Split(My.Settings.audio_files_custom, "!=!")
+                Dim i As Integer = 0
+                For Each file In files
+                    ''MsgBox(ComboBox1.Text & " = " & file & " | " & sound(0) & " = " & Split(My.Settings.audio_files_filename, "!=!")(i))
+                    If (ComboBox1.Text.Equals(file)) Then
+                        If (System.IO.File.Exists(appPath & "files\" & Split(My.Settings.audio_files_filename, "!=!")(i))) Then
+                            If ComboBox1.Text = "" Then
+                                MsgBox("You need to select a audio file that you would like to restore.")
+                            Else
+                                System.IO.File.Copy(appPath & "files\" & Split(My.Settings.audio_files_filename, "!=!")(i), gmod & Split(My.Settings.audio_files_details, "!=!")(i), True)
+                                MsgBox("Done!")
+                                Return
+                            End If
+                        Else
+                        End If
+                    End If
+                    i = i + 1
+                Next
+
+            Next
+            MsgBox("It appears you do not have a restore file for this sound/song. Please place one inside the files folder and try again.", vbCritical, "404 ERROR")
         End If
     End Sub
 

@@ -21,7 +21,7 @@
             System.IO.File.Delete(appPath & "update.bat")
         Catch ex As Exception
         End Try
-        If Not System.IO.File.Exists(appPath & "add.api") Then
+        If Not System.IO.File.Exists(appPath & "add.api") And My.Settings.audio_files_filename.Equals("") Then
             My.Computer.Network.DownloadFile("http://introsphere.ga/intmc/default-add.api", appPath & "add.api")
         End If
         If Timer1.Interval = 3000 Then
