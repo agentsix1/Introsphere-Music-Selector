@@ -17,12 +17,11 @@
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Label4.Text = Version
-
-        If pubrelease = False Then
-            Try
-                System.IO.File.Delete(appPath & "update.bat")
-            Catch ex As Exception
-            End Try
+        Try
+            System.IO.File.Delete(appPath & "update.bat")
+        Catch ex As Exception
+        End Try
+        If Not System.IO.File.Exists(appPath & "add.api") Then
             My.Computer.Network.DownloadFile("http://introsphere.ga/intmc/default-add.api", appPath & "add.api")
         End If
         If Timer1.Interval = 3000 Then

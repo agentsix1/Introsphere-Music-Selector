@@ -26,3 +26,17 @@ H:\Introsphere_Music_Selector_source\Lifepunch Music Selector vFinal\Lifepunch M
 H:\Introsphere_Music_Selector_source\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\obj\Release\Introsphere Music Selector.exe
 H:\Introsphere_Music_Selector_source\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\obj\Release\Introsphere Music Selector.xml
 H:\Introsphere_Music_Selector_source\Lifepunch Music Selector vFinal\Lifepunch Music Selector vFinal\obj\Release\Introsphere Music Selector.pdb
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\bin\Release\Introsphere Music Selector.exe.config
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\bin\Release\Introsphere Music Selector.exe
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\bin\Release\Introsphere Music Selector.pdb
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\bin\Release\Introsphere Music Selector.xml
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\obj\Release\Lifepunch Music Selector vFinal.vbprojResolveAssemblyReference.cache
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\obj\Release\Lifepunch_Music_Selector_vFinal.frmMain.resources
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\obj\Release\Lifepunch_Music_Selector_vFinal.frmPatch.resources
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\obj\Release\Lifepunch_Music_Selector_vFinal.frmSplash.resources
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\obj\Release\Lifepunch_Music_Selector_vFinal.frmSteam.resources
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\obj\Release\Lifepunch_Music_Selector_vFinal.Resources.resources
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\obj\Release\Lifepunch Music Selector vFinal.vbproj.GenerateResource.Cache
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\obj\Release\Introsphere Music Selector.exe
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\obj\Release\Introsphere Music Selector.xml
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Lifepunch Music Selector vFinal\obj\Release\Introsphere Music Selector.pdb

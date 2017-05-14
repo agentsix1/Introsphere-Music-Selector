@@ -70,7 +70,7 @@ Module Module1
     Public Function CheckForUpdates()
         frmSplash.Label1.Text = "Checking For Updates..."
         Dim client As Net.WebClient = New Net.WebClient()
-        Dim reader As IO.StreamReader = New IO.StreamReader(client.OpenRead("https://pastebin.com/raw/dgzKDERx"))
+        Dim reader As IO.StreamReader = New IO.StreamReader(client.OpenRead("https://pastebin.com/raw/H5vr4mQP"))
         Dim info As String() = Split(reader.ReadToEnd, vbCrLf)
         Dim filename As String = info(2)
         Dim LatestVer = info(0)
@@ -81,20 +81,26 @@ Module Module1
             Dim Result As DialogResult = MessageBox.Show("You are needing to update as you are currently out of date. Would you like to be redirect to the latest version?", "Needs Updating", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
             If Result = System.Windows.Forms.DialogResult.Yes Then
                 Try
+                    System.IO.File.Delete(Application.StartupPath & "\" & filename)
                     My.Computer.Network.DownloadFile(info(1), Application.StartupPath & "\" & filename)
                 Catch ex As Exception
-                    MsgBox("The update server may be offline try again later", vbInformation, "Error")
+                    MsgBox("The update server may be offline try again later" & info(1), vbInformation, "Error")
                 End Try
 
                 If System.IO.File.Exists(Application.StartupPath & "\" & filename) Then
                     MsgBox("We now need you to restart your program. Another program will breifly open and your updated program will launch. Lets do this", vbInformation, "Important Info")
                     System.IO.File.WriteAllText(Application.StartupPath & "\update.bat", "" & "
                                                 @echo off
-                                                wait 1000
+                                                del /F ""Introsphere Music Selector.exe.pre " & info(0) & """
                                                 ren """ & Application.ExecutablePath & """ ""Introsphere Music Selector.exe.pre " & info(0) & """
+                                                del /F ""Introsphere Music Selector.exe""" & vbCrLf & "
                                                 ren """ & filename & """ ""Introsphere Music Selector.exe""
                                                 start """" ""Introsphere Music Selector.exe""")
+                    frmSplash.Close()
+                    frmMain.Close()
+                    frmSteam.Close()
                     Process.Start(Application.StartupPath & "\update.bat")
+                    wait(1000)
                 End If
             End If
 
