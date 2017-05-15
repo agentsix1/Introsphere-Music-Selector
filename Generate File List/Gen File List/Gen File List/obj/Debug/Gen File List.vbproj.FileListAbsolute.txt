@@ -1,0 +1,11 @@
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Generate File List\Gen File List\Gen File List\bin\Debug\Gen File List.exe.config
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Generate File List\Gen File List\Gen File List\bin\Debug\Gen File List.exe
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Generate File List\Gen File List\Gen File List\bin\Debug\Gen File List.pdb
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Generate File List\Gen File List\Gen File List\bin\Debug\Gen File List.xml
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Generate File List\Gen File List\Gen File List\obj\Debug\Gen File List.vbprojResolveAssemblyReference.cache
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Generate File List\Gen File List\Gen File List\obj\Debug\Gen_File_List.frmMain.resources
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Generate File List\Gen File List\Gen File List\obj\Debug\Gen_File_List.Resources.resources
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Generate File List\Gen File List\Gen File List\obj\Debug\Gen File List.vbproj.GenerateResource.Cache
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Generate File List\Gen File List\Gen File List\obj\Debug\Gen File List.exe
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Generate File List\Gen File List\Gen File List\obj\Debug\Gen File List.xml
+H:\Introsphere Music Selector\Introsphere-Music-Selector\Generate File List\Gen File List\Gen File List\obj\Debug\Gen File List.pdb
